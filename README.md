@@ -6,7 +6,7 @@
 
 > Validated on: Debian Buster 10.6
 
-This script build a live image based on Debian Linux for addressing three purposes:
+This script builds a live image based on Debian Linux for addressing three purposes:
 - Removing malicious content (especially for operating systems not supported by antivirus vendors) and doing forensics on the hard drive of the machine that run the R&S Disk image;
 - Remote access to machine for fast response in case of incident;
 - Education for building a live image based on Debian Linux.
