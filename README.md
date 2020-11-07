@@ -6,7 +6,7 @@
 
 > Validated on: Debian Buster 10.6
 
-This script builds a live image based on Debian Linux for addressing three purposes:
+This script builds a live image based on Debian Linux in order to address three needs:
 - Removing malicious content (especially for operating systems not supported by antivirus vendors) and doing forensics on the hard drive of the machine that run the R&S Disk image;
 - Remote access to machine for fast response in case of incident;
 - Education for building a live image based on Debian Linux.
@@ -47,19 +47,20 @@ $ bash 00_create_rescue_disk.sh | tee live.log
 An iso file in available in the current directory.
 The directory "live_image" content all the live-build environment for creating the disk image.
 It is left for education and troubleshooting.
-## Disk image information and usages
 
+## Disk image information and usages
 ### General information
 Autologin is configured.
 
 The default username and associated password is displayed in the conky window on the desktop.
+ **TODO:**
+ - [ ] Add screen, in the started, for setting the password for default user (yad window ?)
 
-For changing the keyboard layout,
-Click on the flag in the panel and select the layout (configured fr, en, us).
+For changing the keyboard layout: click on the flag in the panel and select the layout (configured fr, en, us).
 For a new layout, right click on the flag in the panel, "Keyboard settings", "Layout", button "Add", select your layout, then put your layout in the top.
 
  **TODO:**
- - [ ] Menu customization 
+ - [ ] Menu customization
 
 ### Available tools
 Launchers configured in the panel:
@@ -78,7 +79,7 @@ For forenscis, the Debian metapackage "forensics-full" is installed. The full li
 OpenSSH server is installed for remote access (the ip of the machine is displayed in the conky window on the desktop).
 
  **TODO:**
- - [ ] Work on additional tools not in standard Debian repositories
+ - [ ] Work on additional tools which are not packaged for Debian (download and installation scripts to run in chroot)
 
 #### Mounting a drive to be analyzed
 Identify the list of drive :
