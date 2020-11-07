@@ -1,7 +1,9 @@
 # Rescue & Forensics Disk
 >Author: Sabri Khemissa sabri.khemissa@gmail.com
-Rescue & Forensics Disk aka R&F Disk, version: 0.9.1
-Validated on: Debian Buster 10.6
+
+> Rescue & Forensics Disk aka R&F Disk, version: 0.9.1
+
+> Validated on: Debian Buster 10.6
 
 This script build a live image based on Debian Linux for addressing three purposes:
 - Removing malicious content (especially for operating systems not supported by antivirus vendors) and doing forensics on the hard drive of the machine that run the R&S Disk image;
