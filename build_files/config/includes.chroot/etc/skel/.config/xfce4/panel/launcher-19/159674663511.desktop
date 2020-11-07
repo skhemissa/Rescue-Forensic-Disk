@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=KeePass2
+GenericName=Password manager
+Exec=keepass2 %f
+Icon=keepass2
+Terminal=false
+Type=Application
+StartupNotify=false
+Categories=Utility;
+MimeType=application/x-keepass2;
+X-XFCE-Source=file:///usr/share/applications/keepass2.desktop

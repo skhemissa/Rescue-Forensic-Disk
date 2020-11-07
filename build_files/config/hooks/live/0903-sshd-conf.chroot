@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+echo "-----"
+echo "Updating OpenSSH server to allow password based authentication"
+sed -i "s/.*PasswordAuthentication.*/PasswordAuthentication yes/g" /etc/ssh/sshd_config
+echo "-----"

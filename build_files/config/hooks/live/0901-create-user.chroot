@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+echo "-----"
+echo "create user post installation"
+/usr/sbin/useradd thor --create-home --shell /bin/bash
+chmod -R 755 /home/thor/
+/usr/sbin/usermod -p '$6$vPp3EOw3$uILdklM5JhKpUqKcWVv.tmDvV0P6fo9VDaO.f.ltrCPg0uLcMXxmWcKSm16BO4Ouny4veIcCvVNbUZNO2Ktpc.' thor
+echo "thor ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/thor
+echo "-----"

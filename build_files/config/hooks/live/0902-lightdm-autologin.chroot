@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+echo "-----"
+echo "Configuring lightdm.conf for autologin"
+sed -i 's/^#autologin-guest=false/autologin-guest=false/' /etc/lightdm/lightdm.conf
+sed -i 's/^#autologin-user=$/autologin-user=thor/' /etc/lightdm/lightdm.conf
+sed -i 's/^#autologin-user-timeout=0/autologin-user-timeout=0/' /etc/lightdm/lightdm.conf
+echo "-----"

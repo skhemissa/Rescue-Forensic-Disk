@@ -1,0 +1,9 @@
+
+# ignore the live_image directory that is deleted every script startup
+live_image
+
+# ignore log files
+*.log
+
+# ignore iso files
+*.iso

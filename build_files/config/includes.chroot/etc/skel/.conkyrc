@@ -1,0 +1,64 @@
+os.execute("sleep 1")
+
+conky.config = {
+    background = true,
+    double_buffer = true,
+    alignment = 'top_right',
+    border_width = 1,
+    cpu_avg_samples = 2,
+    default_color = 'white',
+    default_outline_color = 'black',
+    default_shade_color = 'black',
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    own_window = true,
+    own_window_type = 'dock',
+    own_window_transparent = false,
+    own_window_argb_visual = true,
+    own_window_argb_value = 64,
+    own_window_colour = 'black',
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    minimum_width = 170, minimum_height = 0,
+    stippled_borders = 0,
+    update_interval = 2.0,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    show_graph_range = false,
+    use_xft = true,
+    xftalpha = 0.1,
+    font = 'Droid Sans:size=11',
+    color0 = 'white',
+    color1 = 'EAEAEA',
+    color2 = 'FFA300',
+    color3 = 'grey'
+}
+
+conky.text = [[
+${color slate grey}${hr 2}
+${color1}Computer name      ${alignr}${color}${nodename}
+${color1}Computer Address     ${alignr}${color}${exec hostname -I}
+${color1}Rescue Disk version     ${alignr}${color}0.9.1
+${color slate grey}${hr 2}
+${color1}Username     ${alignr}thor
+${color1}User password     ${alignr}${color}thor
+${color slate grey}${hr 2}
+${color1}Uptime     ${alignr}${color}$uptime
+${if_existing /sys/class/power_supply/BAT0/uevent}${color1}Battery charge     ${alignr}${color}${battery BAT0}${endif}
+${color slate grey}${hr 2}
+${color1}CPU Usage ${color}${cpu cpu1}%  ${cpubar cpu1}
+${color1}Processes: $processes  Running: $running_processes 
+${color1}Memory Usage ${alignr}${color}${mem} / ${memmax} - $memperc%
+${color1}Swap Usage  ${alignr}${color}${swap} / ${swapmax} - ${swapperc}%
+${color slate grey}${hr 2}
+${color1}File system
+${color1}/       ${alignc}${color}${fs_used /} / ${fs_size /} ${color}${alignr}${fs_free_perc /} %
+${color}${fs_bar 5,300 /}
+]]

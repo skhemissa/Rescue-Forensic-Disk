@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/mousepad /home/thor/Desktop/README.txt
+Hidden=false
+X-GNOME-Autostart-enabled=true
+Name=readme
+

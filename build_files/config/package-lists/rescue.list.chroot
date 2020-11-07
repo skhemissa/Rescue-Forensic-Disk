@@ -1,0 +1,20 @@
+# windows Manager
+xorg xfce4 thunar-volman xfce4-goodies lightdm xfce4-terminal
+
+# drivers for different Ethernet, wifi and Bluetooth adapters
+firmware-realtek firmware-iwlwifi firmware-linux-nonfree
+
+# tools 
+openssh-server firefox-esr vim sudo ntfs-3g unzip policykit-1 flameshot wget curl filezilla gparted conky inetutils-syslogd keepass2 abiword
+
+# antivirus
+clamdscan clamtk clamav
+
+# net and sec tools
+wireshark wireshark-gtk tcpdump netcat nmap zenmap
+
+# metapackage forensics-full 
+forensics-full
+
+# additional forensics packages
+autopsy smb4k

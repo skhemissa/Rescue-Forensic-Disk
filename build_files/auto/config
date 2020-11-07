@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+	--distribution buster \
+	--parent-distribution buster \
+	--architectures amd64 \
+	--archive-areas "main contrib non-free" \
+	--apt-recommends false \
+	--security true \
+	--updates true \
+	--bootappend-live "boot=live components hostname=rescue keyboard-layouts=fr" \
+	"${@}"
