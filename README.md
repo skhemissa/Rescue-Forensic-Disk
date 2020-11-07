@@ -1,8 +1,8 @@
-# Rescue & Forensics Disk
+# Rescue & Forensic Disk
 
 >Author: Sabri Khemissa sabri.khemissa@gmail.com
 
-> Rescue & Forensics Disk aka R&F Disk, version: 0.9.1
+> Rescue & Forensic Disk aka R&F Disk, version: 0.9.1
 
 > Validated on: Debian Buster 10.6
 
