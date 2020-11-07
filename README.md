@@ -43,7 +43,9 @@ Run the following command:
 ```
 $ bash 00_create_rescue_disk.sh | tee live.log
 ```
-An iso file
+An iso file in available in the current directory.
+The directory "live_image" content all the live-build environment for creating the disk image.
+It is left for education and troubleshooting.
 ## Disk image information and usages
 
 ### General information
