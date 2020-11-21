@@ -8,7 +8,7 @@ firmware-realtek firmware-iwlwifi firmware-linux-nonfree
 openssh-server firefox-esr vim sudo ntfs-3g unzip policykit-1 flameshot wget curl filezilla gparted conky inetutils-syslogd keepass2 abiword
 
 # antivirus
-clamdscan clamtk clamav
+clamdscan clamtk clamav clamav-daemon
 
 # net and sec tools
 wireshark wireshark-gtk tcpdump netcat nmap zenmap
